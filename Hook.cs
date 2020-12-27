@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using CSR;
 
 
-namespace CSRDemo
+namespace FCPlugin
 {
 	/// <summary>
 	/// 此类为hook调用示范类，步骤如下：<br/>

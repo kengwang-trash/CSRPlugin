@@ -7,8 +7,8 @@
     <ProjectGuid>{95E4503B-BF15-499B-B5B2-FC0F3E425A3E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CSRDemo</RootNamespace>
-    <AssemblyName>CSRDemo.csr</AssemblyName>
+    <RootNamespace>FCPlugin</RootNamespace>
+    <AssemblyName>FCPlugin.csr</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -42,6 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AmazeForm\AmazeForm.cs" />
+    <Compile Include="AmazeForm\Components\Button.cs" />
+    <Compile Include="AmazeForm\Forms\ModalForm.cs" />
     <Compile Include="BDS\Component.cs" />
     <Compile Include="BDS\Events.cs" />
     <Compile Include="BDS\MCCSAPI.cs" />
@@ -52,6 +55,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="C#插件开发指南.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FutureCraft\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AmazeForm\README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
